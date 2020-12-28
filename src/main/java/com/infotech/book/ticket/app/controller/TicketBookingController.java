@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.*;
 @Api(value = "Ticket controller - which we perform crud operation!")
 public class TicketBookingController {
 
-
-    //
     @Autowired
     private TicketBookingService ticketBookingService;
 

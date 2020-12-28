@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -33,23 +32,15 @@ public class TicketBookingApp {
                 .apiInfo(apiInfo());
     }
 
-    /*private ApiInfo apiInfo() {
-        return new ApiInfoBuilder()
-                .title("REST API")
-                .description("Servicesx")
-                .build();
-    }*/
-
     private ApiInfo apiInfo() {
         return new ApiInfo(
                 "Ticket Booking API",
                 "This api will use to book the tickets.",
                 "1.0",
                 "Free to use",
-                new springfox.documentation.service.Contact("Supriya Soni", "https://github.com/supriya1254/SpringBootJpaApp","supriya@gmail.com"),
+                new springfox.documentation.service.Contact("Supriya Soni", "https://github.com/supriya1254/tickets-booking-api","supriya@gmail.com"),
                 "API License",
-                "https://github.com/supriya1254/SpringBootJpaApp",
+                "https://github.com/supriya1254/tickets-booking-api",
                 Collections.emptyList());
-
     }
 }
