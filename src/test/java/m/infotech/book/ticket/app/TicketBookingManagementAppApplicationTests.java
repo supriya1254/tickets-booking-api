@@ -1,3 +1,4 @@
+/*
 package m.infotech.book.ticket.app;
 
 import org.junit.Test;
@@ -14,3 +15,4 @@ public class TicketBookingManagementAppApplicationTests {
 	}
 
 }
+*/

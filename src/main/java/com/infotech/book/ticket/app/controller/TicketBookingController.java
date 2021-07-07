@@ -6,6 +6,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,7 +31,7 @@ public class TicketBookingController {
 
     @GetMapping(value = "/ticket/{ticketId}")
     //@RequestMapping(value="/ticket/{ticketId}")
-    public Ticket getTicketById(@PathVariable("ticketId") Integer ticketId) {
+    public Optional<Ticket> getTicketById(@PathVariable("ticketId") Integer ticketId) {
         return ticketBookingService.getTicketById(ticketId);
     }
 
